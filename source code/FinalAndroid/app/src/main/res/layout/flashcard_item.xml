@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:id="@+id/cardView"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/CustomViewFlipper">
+
+        <RelativeLayout
+            android:id="@+id/frontLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/frontTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Front Side"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/audioButtonFront"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                app:srcCompat="@drawable/audio_24px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/backLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/backTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Back Side"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/audioButtonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                app:srcCompat="@drawable/audio_24px" />
+        </RelativeLayout>
+    </ViewFlipper>
+</com.google.android.material.card.MaterialCardView>

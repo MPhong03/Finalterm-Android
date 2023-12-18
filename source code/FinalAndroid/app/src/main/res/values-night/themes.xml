@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizAPP" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/moss</item>
+        <item name="colorSurface">@color/moss</item>
+        <item name="android:windowSplashScreenBackground">#77c801</item>
+
+        <item name="android:windowBackground">@drawable/background_v2</item>
+
+    </style>
+
+    <style name="Base.Theme.QuizAPP.Main" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/moss</item>
+        <item name="colorSurface">@color/moss</item>
+        <item name="android:windowSplashScreenBackground">#77c801</item>
+
+        <item name="android:windowBackground">@drawable/background_v2</item>
+
+    </style>
+
+    <style name="CustomMaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/light_moss</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/light_moss</item>
+    </style>
+
+    <style name="CustomViewFlipper">
+        <item name="android:background">@drawable/flashcard</item>
+    </style>
+
+    <style name="CustomFloatingButton">
+        <item name="backgroundTint">@color/purple</item>
+    </style>
+
+</resources>

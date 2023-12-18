@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="profile_files">
+        <item>profile1.txt</item>
+        <item>profile2.txt</item>
+    </array>
+</resources>

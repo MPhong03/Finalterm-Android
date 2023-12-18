@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuizAPP" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/light_moss</item>
+        <item name="colorSurface">@color/light_moss</item>
+        <item name="android:windowSplashScreenBackground">#77c801</item>
+        <item name="android:textColorPrimary">@color/dark</item>
+
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+    
+    <style name="Base.Theme.QuizAPP.Main" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/light_moss</item>
+        <item name="colorSurface">@color/light_moss</item>
+        <item name="android:windowSplashScreenBackground">#77c801</item>
+
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <style name="CustomMaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/moss</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/moss</item>
+    </style>
+
+    <style name="CustomViewFlipper">
+        <item name="android:background">@drawable/flashcard_v2</item>
+    </style>
+
+    <style name="CustomFloatingButton">
+        <item name="backgroundTint">@color/light_green</item>
+    </style>
+
+
+    <style name="Theme.QuizAPP" parent="Base.Theme.QuizAPP" />
+    <style name="Theme.QuizAPP.Main" parent="Base.Theme.QuizAPP.Main" />
+</resources>
